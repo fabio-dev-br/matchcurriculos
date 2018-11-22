@@ -1,0 +1,22 @@
+Fluxo login
+
+Abrindo o arquivo Login.vue, e seguindo o fluxo de login, verificar como o form é validado. Verificar o que é a propriedade
+computed do vue. Estudar o funcionamento do envio de dados por meio da API (ApiService.js).
+
+No exemplo do login, é realizado um post para a rota '/login2' com os dados de email e senha.
+
+No projeto de backend, olhar o arquivo de rotas api-routes.php e verificar para qual controller os dados estão sendo enviados. 
+No caso, é o arquivo UserController e a função login() está sendo chamada.
+
+Os dados enviados pelo post estão sendo capturados pelo método $request->getPostParams(). Em seguida, os dados são enviados para a model Access.
+Para entender como o objeto instanciado da model está sendo utilizada na classe UserController, é necessário entender o funcionamento de injeção
+de dependências, estudar a teoria, e em seguida olhar o arquivo dependencies.php.
+
+A partir disso, olhar o método login da model access, e verificar como os dados estão sendo tratado. É necessário levar em consideração que apenas
+os objetos Entity conseguem acessar o banco de dados. No caso, a model Access possuiu um objeto da classe User instanciado (user).
+
+Seguir o fluxo, e veriricar como está sendo feita a verificação de email e senha. Os dados serão retornados para a controller. 
+Verificar o porquê de criptografar as informações para enviar para o frontend.
+
+Por fim, é enviado de volta para o frontend os dados. Para isso, é utilizado o ResponseHandler. A função printJson() é responsável por mandar 
+os dados para o frontend. 
