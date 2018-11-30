@@ -2,10 +2,10 @@
     <b-card no-body>
         <b-tabs pills card vertical>
           <b-tab title="Introdução" active>
-            Muitas empresas para realizar o recrutamento de novos funcionários necessita buscar novos currículos em fontes externas, ou apenas recebem via e-mail, onde necessita que funcionários da empresa busquem seus interesses em currículos de maneira manual gastando tempo e dinheiro,Pensando nisso surgiu a currículos-incit.
+            Muitas empresas para realizar o recrutamento de novos funcionários necessita buscar novos currículos em fontes externas, ou apenas recebem via e-mail, onde necessita que funcionários da empresa busquem seus interesses em currículos de maneira manual gastando tempo e dinheiro,Pensando nisso surgiu a Match de Currículos.
           </b-tab>
           <b-tab title="O que é">
-            Currículos-incit é um portal open-source desenvolvido em setembro de 2018 ainda em processo de desenvolvimento, onde pessoas e empresas podem se cadastrar, onde a pessoa insere seus dados e seu currículo, assim as empresas buscam currículos conforme seus interesses de forma automática aparece os currículos que combinam com os interesses da empresa, a ideia é que o sistemas seja utilizado por diversas empresas.
+            Match de Currículos é um portal open-source desenvolvido em setembro de 2018 ainda em processo de desenvolvimento, onde pessoas e empresas podem se cadastrar, onde a pessoa insere seus dados e seu currículo, assim as empresas buscam currículos conforme seus interesses de forma automática aparece os currículos que combinam com os interesses da empresa, a ideia é que o sistemas seja utilizado por diversas empresas.
           
 
             <div>
@@ -65,7 +65,7 @@
 
 
         </b-tab>
-          <b-tab title="Contato:">
+          <b-tab title="Contato">
             E-mails:
           </b-tab>
         </b-tabs>

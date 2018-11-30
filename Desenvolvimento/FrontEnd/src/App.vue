@@ -22,6 +22,10 @@ import FooterHome from './components/pages/Footer-home'
 import Home from './components/pages/Home'
 import HeaderHome from './components/pages/Header-home'
 import PortalEmpresa from './components/pages/PortalEmpresa'
+//import PortalNoticiaE from "./../components/pages/PortalNoticiaE";
+//import PortalNoticiaP from "./../components/pages/PortalNoticiaP";
+//import PortalVagaE from "./../components/pages/PortalVagaE";
+//import PortalVagaP from "./../components/pages/PortalVagaP";
 import PortalPessoa from './components/pages/PortalPessoa'
 import Login from './components/pages/Login'
 export default {
@@ -31,6 +35,10 @@ export default {
     Home,
     HeaderHome,
     PortalEmpresa,
+    //PortalNoticiaE,
+    //PortalNoticiaP,
+    //PortalVagaE,
+    //PortalVagaP,
     PortalPessoa,
     Login
   }

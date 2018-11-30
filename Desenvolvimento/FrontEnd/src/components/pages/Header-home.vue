@@ -12,7 +12,7 @@ Explore
  Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
 curriculoFrontEnd/src/components/pages/Header-home.vue
 88587e4  13 days ago
-@ViDenadai ViDenadai interface perfil
+@Fabio, Daniel, Matheus, Jhonathan, Rodrigo interface perfil
     
 98 lines (76 sloc)  2.83 KB
 <!-- Componente de header da página home -->
@@ -20,20 +20,23 @@ curriculoFrontEnd/src/components/pages/Header-home.vue
     <header>
         <b-navbar toggleable="md" type="dark" variant="dark">
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-            <b-navbar-brand href="/">CurriculoIncit</b-navbar-brand>
+            <b-navbar-brand href="/">Match de Currículos</b-navbar-brand>
 
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item @click="redirecthome">Início</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav>
+                    <b-nav-item @click="redirectnoticia">Notícias</b-nav-item>
+                </b-navbar-nav>
+                <b-navbar-nav>
+                    <b-nav-item @click="redirectvaga">Vagas</b-nav-item>
+                </b-navbar-nav>
+                <b-navbar-nav>
                     <b-nav-item @click="redirectsobre" >Sobre</b-nav-item>
                 </b-navbar-nav>
-            </b-collapse>   
-            
-            
-            
-
+            </b-collapse>              
+                        
 
             <b-navbar-nav class="ml-auto">
                 <div id="loginButton" >
@@ -74,6 +77,24 @@ export default {
                 this.$router.push('/portal-empresa');
             } else {
                 this.$router.push('/portal-pessoa');
+            }
+            
+        },
+        redirectnoticia () {
+            // user_type = this.$store.getters.user_type;
+            if(this.$store.getters.userType == 0) {
+                this.$router.push('/portal-noticiaE');
+            } else {
+                this.$router.push('/portal-noticiaP');
+            }
+            
+        },
+        redirectvaga () {
+            // user_type = this.$store.getters.user_type;
+            if(this.$store.getters.userType == 0) {
+                this.$router.push('/portal-vagaE');
+            } else {
+                this.$router.push('/portal-vagaP');
             }
             
         },
